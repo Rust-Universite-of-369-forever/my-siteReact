@@ -84,6 +84,7 @@ class App extends React.Component {
       ? stories.filter((s) => s.userId === viewerUser)
       : [];
 
+    debugger; 
     return (
       <>
         <StoriesFeed
