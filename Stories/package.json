@@ -7,7 +7,9 @@
     "dev": "vite",
     "build": "vite build",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist",
+    "lint": "eslint . || oxlint",
+    "test": "vitest run"
   },
   "dependencies": {
     "prop-types": "^15.8.1",

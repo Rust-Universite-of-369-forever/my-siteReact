@@ -3,6 +3,9 @@ on: [push, pull_request] 		#запуск при любом пуше и при с
 jobs:
   lint-and-test:
     runs-on: ubuntu-latest		# используется виртуальная машина GitHub
+    defaults:
+      run:
+        working-directory: ./Stories
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
