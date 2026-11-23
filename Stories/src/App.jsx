@@ -12,7 +12,6 @@ class App extends React.Component {
     super(props);
     const users = load(STORAGE_KEYS.users, []);
     const session = load(STORAGE_KEYS.session, null);
-    // Валидируем сессию: гость всегда валиден, иначе пользователь должен существовать
     const currentUser =
       session && (session === 'guest' || users.some((u) => u.login === session))
         ? session
