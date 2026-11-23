@@ -16,6 +16,6 @@ beforeAll(() => {
 describe('App component', () => {
   it('renders without crashing', () => {
     render(<App />);
-    expect(true).toBe(true);
+    expect(true).toBe(false);
   });
 });
