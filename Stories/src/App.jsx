@@ -84,7 +84,8 @@ class App extends React.Component {
       ? stories.filter((s) => s.userId === viewerUser)
       : [];
 
-    debugger; 
+    const testLint = "Привет";
+    console.log(testLintTypo); // Опечатка! Переменной testLintTypo не существует
     return (
       <>
         <StoriesFeed
