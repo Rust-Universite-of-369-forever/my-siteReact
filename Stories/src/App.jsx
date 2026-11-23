@@ -84,8 +84,6 @@ class App extends React.Component {
       ? stories.filter((s) => s.userId === viewerUser)
       : [];
 
-    this is a syntax error;
-    
     return (
       <>
         <StoriesFeed
